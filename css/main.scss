@@ -1,0 +1,331 @@
+
+// ======== PRESETS LOADING ========
+@font-face {
+	font-family: 'HelveticaNeueCyr UltraLight';
+	src: url(fonts/HelveticaNeueCyr-UltraLight.otf); 
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr Light'; 
+	src: url(fonts/HelveticaNeueCyr-Light.otf); 
+}
+@font-face {
+	font-family: 'Kelson Sans RU Regular'; 
+	src: url(fonts/Kelson_Sans_Regular_RU.otf); 
+}
+@font-face {
+	font-family: 'Kelson Sans RU Light';
+	src: url(fonts/Kelson_Sans_Light_RU.otf);
+}
+$font_ul: 'HelveticaNeueCyr UltraLight';
+$font_l: 'HelveticaNeueCyr Light';
+$font_KR: 'Kelson Sans RU Regular';
+$font_KL: 'Kelson Sans RU Light';
+
+// ======== END ========
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: $font_ul;
+}
+
+/* ======== BEGIN LOGIN PAGE ======== */
+body {
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	background-color: #e9e8f0;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover; 
+	height: 100vh;
+}
+
+.logo_block {
+	margin-top: 8%;
+}
+.title_block {
+	color: #fff;
+	.title_site {
+		font-size: 3em;
+		margin-top: 10px;
+		span {
+			font-family: $font_l;
+		}
+	}
+	.description_site {
+		font-size: 1.5em;
+		letter-spacing: 1.6px;
+	}
+}
+.login_block {
+	background-color: #fff;
+	width: 90%;
+	height: auto;
+	padding-top: 39px;
+	padding-bottom: 29px;
+
+	.login_input {
+		width: 70%;
+		height: 45px;
+		border: 1px solid #e5e5e5;
+		font-family: $font_l;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 16px;
+
+		&:focus {
+			outline: none;
+			color: #333;
+		}
+	}
+	.password_input {
+		margin-top: 6%;
+		width: 70%;
+		height: 45px;
+		border: 1px solid #e5e5e5;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-size: 16px;
+		font-family: $font_l;
+		
+		&:focus {
+			outline: none;
+			color: #333;
+		}
+	}
+	.btn_login {
+		margin-top: 8%;
+		width: 45%;
+		height: 50px;
+		border-radius: 0;
+		background-color: #1161ee;
+		color: #fff;
+		transition: 0.3s;
+		// outline: none;
+		border: none;
+		font-size: 18px;
+		letter-spacing: 2.6px;
+
+		&:hover {
+			background-color: #6295ee;
+			color: #fff;
+			transition: 0.3s;
+		}
+	}
+}
+
+/* ======== END LOGIN PAGE ========*/
+
+/* ======== BEGIN STAROSTA PAGE ======== */
+.sideblock_wrapper {
+	border: 10px solid #e9e8f0;
+}
+.header_block {
+	background-color: #fff;
+}
+.header_logo_block {
+	margin-top: 1%;
+	font-size: 22px;
+	padding-bottom: 5px;
+	img {
+		max-width: 26%;
+		max-height: 40%;
+	}
+	span {
+		font-family: $font_l;
+	}
+}
+.title_text {
+	font-size: 29px;
+	margin-top: 24px;
+	margin-left: 40px;
+}
+
+.calendar_header {
+	background-color: #f7f6f6;
+	height: auto;
+	padding-bottom: 16px;
+	border-right: 9px solid #e9e8f0;
+
+	.title_calendar {
+		display: inline-block;
+		font-size: 28px;
+		margin-left: 4%;
+		margin-top: 5%;
+	}
+	img {
+		display: inline;
+		margin-left: 10px;
+		max-width: 100%;
+	}
+}
+.group_title {
+	font-size: 28px;
+	background-color: #f7f6f6;
+	padding-bottom: 15px;
+	.title {
+		margin-top: 20px;
+	}
+}
+.group_table {
+	table {
+		tr {
+			
+			th {
+				text-align: center;
+				border: 1px solid #e9e8f0;
+				font-size: 18px;
+			}
+			.new_element {
+				background-color: #6bb9f0;
+			}
+		}
+		tbody {
+			tr {
+				td {
+					font-size: 15px;
+					font-family: $font_l;
+					border: 1px solid #f3f3f3;
+				}
+			}
+		}
+	}
+}
+.plus_btn {
+	width: 100%;
+	height: 42px;
+	background-color: #fff;
+	border: 2px solid #1BBC9B;
+	color: #333;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #1BBC9B;
+		color: #fff;
+		transition: 0.3s;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.calendar_block {
+	height: auto;
+}
+.btn_per_month {
+	height: 85px;
+	width: 85px;
+	font-size: 17px;
+	background-color: #89c4f4;
+	color: #fff;
+	border: none;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #226896;
+		transition: 0.3s;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.calendar_body {
+	border-right: 20px solid #e9e8f0;
+}
+.calendar_block {
+	ul {
+		margin-top: 8px;
+		li {
+			list-style: none;
+			font-size: 20px;
+			line-height: 30px;
+			margin-left: 5%;
+			letter-spacing: 1.2px;
+
+			&:focus {
+				outline: none;
+			}
+
+
+			a {
+				color: #333;
+				text-decoration: none;
+				width: 60%;
+				display: inline-block;
+				transition: 0.3s;
+				border-right: 8px solid #ebebeb;
+
+				&:hover {
+					color: #89c4f4;
+					transition: 0.3s;
+				}
+
+			}
+			span {
+				cursor: default;
+				padding-left: 20%;
+			}
+		}
+	}
+}
+.btn_per_all_time {
+	@extend .btn_per_month;
+	background-color: #f4b350;
+
+	&:hover {
+		background-color: #f69400;
+	}
+}
+.name_block {
+	font-size: 25px;
+	background-color: #f5f5f5;
+	border-right: 9px solid #e9e8f0;
+	.text_name {
+		margin-left: 15px;
+		margin-top: 10px;
+		margin-bottom: 0 !important;
+	}
+	.text_spec {
+		margin-left: 15px;
+		font-size: 16px;
+		color: #9f9fb0;
+		letter-spacing: 1px;
+	}
+}
+.exit_btn {
+	background-color: #e95b4c;
+	width: 85px;
+	// margin-left: 15px;
+	height: 50px;
+	padding: 0 !important;
+	border: none;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 1px;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: #e63724;
+		transition: 0.3s;
+	}
+}
+.exit_block {
+	background-color: #e9e8f0;
+}
+.background_wrapper {
+	background-color: #e9e8f0;
+	height: 19vh;
+}
+
+footer {
+	height: 75px;
+	background-color: #333;
+	color: #fff;
+	line-height: 75px;
+	font-size: 19px;
+	
+	p {
+		margin-bottom: 0 !important;
+	}
+}
+/* ======== END STAROSTA PAGE ======== */

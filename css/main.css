@@ -55,7 +55,7 @@ body { background: url(../img/bg.jpg) no-repeat center center fixed; -webkit-bac
 .btn_per_month:hover, .btn_per_all_time:hover { background-color: #226896; -webkit-transition: 0.3s; transition: 0.3s; }
 .btn_per_month:focus, .btn_per_all_time:focus { outline: none; }
 
-.calendar_body { border-right: 20px solid #e9e8f0; }
+.calendar_body { border-right: 9px solid #e9e8f0; }
 
 .calendar_block ul { margin-top: 8px; }
 .calendar_block ul li { list-style: none; font-size: 20px; line-height: 30px; margin-left: 5%; letter-spacing: 1.2px; }
@@ -67,7 +67,7 @@ body { background: url(../img/bg.jpg) no-repeat center center fixed; -webkit-bac
 .btn_per_all_time { background-color: #f4b350; }
 .btn_per_all_time:hover { background-color: #f69400; }
 
-.name_block { font-size: 25px; background-color: #f5f5f5; border-right: 9px solid #e9e8f0; }
+.name_block { font-size: 25px; background-color: #f5f5f5; }
 .name_block .text_name { margin-left: 15px; margin-top: 10px; margin-bottom: 0 !important; }
 .name_block .text_spec { margin-left: 15px; font-size: 16px; color: #9f9fb0; letter-spacing: 1px; }
 

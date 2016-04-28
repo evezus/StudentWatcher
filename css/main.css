@@ -1,7 +1,7 @@
-@font-face { font-family: 'HelveticaNeueCyr UltraLight'; src: url(fonts/HelveticaNeueCyr-UltraLight.otf); }
-@font-face { font-family: 'HelveticaNeueCyr Light'; src: url(fonts/HelveticaNeueCyr-Light.otf); }
-@font-face { font-family: 'Kelson Sans RU Regular'; src: url(fonts/Kelson_Sans_Regular_RU.otf); }
-@font-face { font-family: 'Kelson Sans RU Light'; src: url(fonts/Kelson_Sans_Light_RU.otf); }
+@font-face { font-family: 'HelveticaNeueCyr UltraLight'; src: url(../fonts/HelveticaNeueCyr-UltraLight.otf); }
+@font-face { font-family: 'HelveticaNeueCyr Light'; src: url(../fonts/HelveticaNeueCyr-Light.otf); }
+@font-face { font-family: 'Kelson Sans RU Regular'; src: url(../fonts/Kelson_Sans_Regular_RU.otf); }
+@font-face { font-family: 'Kelson Sans RU Light'; src: url(../fonts/Kelson_Sans_Light_RU.otf); }
 * { margin: 0; padding: 0; font-family: "HelveticaNeueCyr UltraLight"; }
 
 /* ======== BEGIN LOGIN PAGE ======== */

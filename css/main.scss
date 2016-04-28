@@ -311,6 +311,7 @@ body {
 }
 .exit_block {
 	background-color: #e9e8f0;
+	padding: 0;
 }
 .background_wrapper {
 	background-color: #e9e8f0;
@@ -329,3 +330,77 @@ footer {
 	}
 }
 /* ======== END STAROSTA PAGE ======== */
+
+/* ======== BEGIN ADMIN PANEL ======== */
+.admin_wrapper {
+	height: 88.8vh;
+	background-color: #e9e8f0;
+}
+
+.btn_students {
+	background-color: #f1f1f1;
+	height: 60px;
+
+	p {
+		line-height: 60px;
+		font-size: 18px;
+
+		a {
+			font-family: $font_l;
+			width: 100%;
+			display: block;
+			text-decoration: none;
+			color: #333;
+			transition: 0.1s;
+
+			&:hover {
+				background-color: #1BBC9B;
+				// color: #fff;
+				transition: 0.1s;
+			}
+		}
+	}
+}
+.active_chapter {
+	background-color: #1BBC9B;
+	// color: #fff;
+	a {
+		color: #fff;
+	}
+}
+.group_list {
+	font-family: $font_l;
+	display: inline-block;
+	margin-left: 3%;
+	line-height: 60px;
+
+	button {
+		border-radius: 0;
+		width: 200px;
+	}
+	ul {
+		li {
+			box-shadow: 0;
+			a {
+				font-family: $font_l;
+			}
+		}
+	}
+}
+.text-inline {
+	display: inline-block;
+}
+.group_label {
+	font-family: $font_l;
+	font-size: 16px;
+}
+input[type="search"] {
+	border-radius: 0;
+	margin-top: 14px;
+	width: 60%;
+	font-family: $font_l;
+}
+.hidden_element {
+	visibility: hidden;
+}
+/* ======== END ADMIN PANEL ======== */

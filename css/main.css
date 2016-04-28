@@ -74,7 +74,7 @@ body { background: url(../img/bg.jpg) no-repeat center center fixed; -webkit-bac
 .exit_btn { background-color: #e95b4c; width: 85px; height: 50px; padding: 0 !important; border: none; font-size: 18px; color: #fff; letter-spacing: 1px; -webkit-transition: 0.3s; transition: 0.3s; }
 .exit_btn:hover { background-color: #e63724; -webkit-transition: 0.3s; transition: 0.3s; }
 
-.exit_block { background-color: #e9e8f0; }
+.exit_block { background-color: #e9e8f0; padding: 0; }
 
 .background_wrapper { background-color: #e9e8f0; height: 19vh; }
 
@@ -82,5 +82,30 @@ footer { height: 75px; background-color: #333; color: #fff; line-height: 75px; f
 footer p { margin-bottom: 0 !important; }
 
 /* ======== END STAROSTA PAGE ======== */
+/* ======== BEGIN ADMIN PANEL ======== */
+.admin_wrapper { height: 88.8vh; background-color: #e9e8f0; }
+
+.btn_students { background-color: #f1f1f1; height: 60px; }
+.btn_students p { line-height: 60px; font-size: 18px; }
+.btn_students p a { font-family: "HelveticaNeueCyr Light"; width: 100%; display: block; text-decoration: none; color: #333; -webkit-transition: 0.1s; transition: 0.1s; }
+.btn_students p a:hover { background-color: #1BBC9B; -webkit-transition: 0.1s; transition: 0.1s; }
+
+.active_chapter { background-color: #1BBC9B; }
+.active_chapter a { color: #fff; }
+
+.group_list { font-family: "HelveticaNeueCyr Light"; display: inline-block; margin-left: 3%; line-height: 60px; }
+.group_list button { border-radius: 0; width: 200px; }
+.group_list ul li { box-shadow: 0; }
+.group_list ul li a { font-family: "HelveticaNeueCyr Light"; }
+
+.text-inline { display: inline-block; }
+
+.group_label { font-family: "HelveticaNeueCyr Light"; font-size: 16px; }
+
+input[type="search"] { border-radius: 0; margin-top: 14px; width: 60%; font-family: "HelveticaNeueCyr Light"; }
+
+.hidden_element { visibility: hidden; }
+
+/* ======== END ADMIN PANEL ======== */
 
 /*# sourceMappingURL=main.css.map */

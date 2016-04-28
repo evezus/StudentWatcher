@@ -214,7 +214,7 @@ body {
 }
 .btn_per_month {
 	height: 85px;
-	width: 85px;
+	width: 100%;
 	font-size: 17px;
 	background-color: #89c4f4;
 	color: #fff;
@@ -231,6 +231,8 @@ body {
 }
 .calendar_body {
 	border-right: 9px solid #e9e8f0;
+	padding: 0 !important;
+	margin: 0;
 }
 .calendar_block {
 	ul {

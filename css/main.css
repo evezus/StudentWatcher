@@ -51,11 +51,11 @@ body { background: url(../img/bg.jpg) no-repeat center center fixed; -webkit-bac
 
 .calendar_block { height: auto; }
 
-.btn_per_month, .btn_per_all_time { height: 85px; width: 85px; font-size: 17px; background-color: #89c4f4; color: #fff; border: none; -webkit-transition: 0.3s; transition: 0.3s; }
+.btn_per_month, .btn_per_all_time { height: 85px; width: 100%; font-size: 17px; background-color: #89c4f4; color: #fff; border: none; -webkit-transition: 0.3s; transition: 0.3s; }
 .btn_per_month:hover, .btn_per_all_time:hover { background-color: #226896; -webkit-transition: 0.3s; transition: 0.3s; }
 .btn_per_month:focus, .btn_per_all_time:focus { outline: none; }
 
-.calendar_body { border-right: 9px solid #e9e8f0; }
+.calendar_body { border-right: 9px solid #e9e8f0; padding: 0 !important; margin: 0; }
 
 .calendar_block ul { margin-top: 8px; }
 .calendar_block ul li { list-style: none; font-size: 20px; line-height: 30px; margin-left: 5%; letter-spacing: 1.2px; }

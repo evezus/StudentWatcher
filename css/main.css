@@ -5,7 +5,7 @@
 * { margin: 0; padding: 0; font-family: "HelveticaNeueCyr UltraLight"; }
 
 /* ======== BEGIN LOGIN PAGE ======== */
-body { background: url(../img/bg.jpg) no-repeat center center fixed; -webkit-background-size: cover; background-color: #e9e8f0; background-size: cover; height: 100vh; }
+body { background: url(../img/bg2.jpg) no-repeat center center fixed; -webkit-background-size: cover; background-color: #e9e8f0; background-size: cover; height: 100vh; }
 
 .logo_block { margin-top: 8%; }
 

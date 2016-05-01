@@ -116,5 +116,13 @@ input[type="search"] { border-radius: 0; margin-top: 14px; width: 60%; font-fami
 .hidden_element { visibility: hidden; }
 
 /* ======== END ADMIN PANEL ======== */
+.teacher_calendar_block li span { margin-left: 60px; }
+
+.btn_lesson { display: block; cursor: pointer; }
+
+#panel { display: none; }
+
+.btn_confirm { background-color: #fff; font-family: "HelveticaNeueCyr Light"; font-size: 17px; border: none; padding: 10px 0; width: 100%; margin-top: 10px; letter-spacing: 1px; -webkit-transition: .1s; transition: .1s; }
+.btn_confirm:hover { background-color: #2cc36b; color: #fff; -webkit-transition: .1s; transition: .1s; }
 
 /*# sourceMappingURL=main.css.map */

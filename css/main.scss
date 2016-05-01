@@ -433,3 +433,37 @@ input[type="search"] {
 	visibility: hidden;
 }
 /* ======== END ADMIN PANEL ======== */
+.teacher_calendar_block {
+	li {
+
+		a {
+		}
+		span {
+			margin-left: 60px;
+		}
+	}
+}
+.btn_lesson {
+	display: block;
+	cursor: pointer;
+}
+#panel {
+	display: none;
+}
+.btn_confirm {
+	background-color: #fff;
+	font-family: $font_l;
+	font-size: 17px;
+	border: none;
+	padding: 10px 0;
+	width: 100%;
+	margin-top: 10px;
+	letter-spacing: 1px;
+	transition: .1s;
+
+	&:hover {
+		background-color: #2cc36b;
+		color: #fff;
+		transition: .1s;
+	}
+}

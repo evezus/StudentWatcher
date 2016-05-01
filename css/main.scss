@@ -31,7 +31,7 @@ $font_KL: 'Kelson Sans RU Light';
 }
 
 /* ======== BEGIN LOGIN PAGE ======== */
-body {
+.wrapper-login-page {
 	background: url(../img/bg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	background-color: #e9e8f0;
@@ -146,7 +146,9 @@ body {
 	background-color: #f7f6f6;
 	height: auto;
 	padding-bottom: 16px;
-	border-right: 9px solid #e9e8f0;
+	border-right: 7px solid #e9e8f0;
+	// border-top: 7px solid #e9e8f0;
+
 
 	.title_calendar {
 		display: inline-block;
@@ -165,15 +167,23 @@ body {
 	background-color: #f7f6f6;
 	padding-bottom: 15px;
 	.title {
-		margin-top: 20px;
+		margin-top: 10px;
+	}
+	.date {
+		font-size: 17px;
+		margin: 0 0;
+		line-height: 10px;
+		font-family: $font_l;
 	}
 }
 .group_table {
 	table {
+		border: none;
 		tr {
+			border: none;
 			th {
 				text-align: center;
-				border: 1px solid #e9e8f0;
+				// border: 1px solid #e9e8f0;
 				font-size: 18px;
 			}
 			.new_element {
@@ -181,8 +191,11 @@ body {
 			}
 		}
 		tbody {
+			border: none;
 			tr {
+				border: none;
 				td {
+					border: none;
 					font-size: 15px;
 					font-family: $font_l;
 					border: 1px solid #f3f3f3;
@@ -201,7 +214,7 @@ body {
 	width: 100%;
 	height: 42px;
 	background-color: #fff;
-	border: 2px solid #1BBC9B;
+	border: none;
 	color: #333;
 	transition: 0.3s;
 
@@ -218,7 +231,7 @@ body {
 	height: auto;
 }
 .btn_per_month {
-	height: 85px;
+	height: 81px;
 	width: 100%;
 	font-size: 17px;
 	background-color: #89c4f4;
@@ -235,7 +248,7 @@ body {
 	}
 }
 .calendar_body {
-	border-right: 9px solid #e9e8f0;
+	border-right: 7px solid #e9e8f0;
 	padding: 0 !important;
 	margin: 0;
 }
@@ -245,10 +258,9 @@ body {
 		li {
 			list-style: none;
 			font-size: 17px;
-			line-height: 30px;
+			line-height: 171%;
 			margin-left: 5%;
 			letter-spacing: 1.2px;
-
 			&:focus {
 				outline: none;
 			}
@@ -257,10 +269,10 @@ body {
 			a {
 				color: #333;
 				text-decoration: none;
-				width: 60%;
+				width: 49%;
 				display: inline-block;
 				transition: 0.3s;
-				border-right: 8px solid #ebebeb;
+				border-right: 7px solid #ebebeb;
 
 				&:hover {
 					color: #89c4f4;
@@ -270,7 +282,7 @@ body {
 			}
 			span {
 				cursor: default;
-				padding-left: 20%;
+				padding-left: 37px;
 			}
 		}
 	}
@@ -278,6 +290,7 @@ body {
 .btn_per_all_time {
 	@extend .btn_per_month;
 	background-color: #f4b350;
+	// border-bottom: 7px solid #e9e8f0;
 
 	&:hover {
 		background-color: #f69400;
@@ -286,14 +299,15 @@ body {
 .name_block {
 	font-size: 25px;
 	background-color: #f5f5f5;
-	// border-right: 9px solid #e9e8f0;
+	border-right: 7px solid #e9e8f0;
 	.text_name {
-		margin-left: 15px;
+		color: #333;
+		margin-left: 12px;
 		margin-top: 10px;
 		margin-bottom: 0 !important;
 	}
 	.text_spec {
-		margin-left: 15px;
+		margin-left: 12px;
 		font-size: 16px;
 		color: #9f9fb0;
 		letter-spacing: 1px;
@@ -301,7 +315,7 @@ body {
 }
 .exit_btn {
 	background-color: #e95b4c;
-	width: 85px;
+	width: 100%;
 	// margin-left: 15px;
 	height: 50px;
 	padding: 0 !important;
@@ -310,6 +324,8 @@ body {
 	color: #fff;
 	letter-spacing: 1px;
 	transition: 0.3s;
+	border-right: 7px solid #e9e8f0;
+
 
 	&:hover {
 		background-color: #e63724;
@@ -317,12 +333,12 @@ body {
 	}
 }
 .exit_block {
-	background-color: #e9e8f0;
-	padding: 0;
+	background-color: #e9e8f0 !important;
+	padding: 0 !important;
 }
 .background_wrapper {
 	background-color: #e9e8f0;
-	height: 19vh;
+	height: 20vh;
 }
 
 footer {

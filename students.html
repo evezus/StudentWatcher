@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<div class="admin_wrapper">
+<div class="admin_wrapper"> <!-- Wrapper begin -->
 	<!-- ========HEADER BEGIN======== -->
 	<div class="container-fluid">
 		<div class="row header_block">
@@ -26,8 +26,8 @@
 			<div class="col-sm-8">
 				<p class="text-center title_text">Панель конфігурації</p>
 			</div>
-			<div class="col-sm-1 exit_block" style="padding-left: 7px; background-color: #fff; margin-top: 15px;">
-				<button class="exit_btn">Вийти</button>
+			<div class="col-sm-1 exit_block" style="padding-left: 7px; margin-top: 15px;">
+				<button class="exit_btn" style="border: none; width: 85%;">Вийти</button>
 			</div>
 		</div>
 	</div>
@@ -141,14 +141,16 @@
 
 		</div>
 	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-offset-11 col-md-1">
+				<button class="plus_btn"><span class="glyphicon glyphicon-plus" style="font-size: 1.2em; color: "></span></button>
+			</div>
+		</div>
+	</div>
 	<!-- ========SIDEBAR END======== -->
 
 
-	<!-- ===========NAME & EXIT BEGIN=========== -->
-	<div class="container-fluid">
-		<div class="row exit_block" style="width: ">
-		</div>
-	</div>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 background_wrapper">
@@ -156,8 +158,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- ===========NAME & EXIT END=========== -->	
-</div>
+</div> <!-- Wrapper end --> 
+
 
 	<!-- ===========FOOTER BEGIN=========== -->
 	<footer>
@@ -166,10 +168,14 @@
 		</p>
 	</footer>
 	<!-- ===========FOOTER END=========== -->
+
+
 	<!-- SCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery-1.12.3.min.js"></script>
+
+	<!-- Заміна кольору іконки при кліку -->
 	<script>
 	$(document).ready(function() {
         $(".fire").click(function() {

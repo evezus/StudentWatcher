@@ -179,6 +179,8 @@ $font_KL: 'Kelson Sans RU Light';
 .group_table {
 	table {
 		border: none;
+		width: 99.9%;
+		background-color: #fff;
 		tr {
 			border: none;
 			th {
@@ -333,7 +335,7 @@ $font_KL: 'Kelson Sans RU Light';
 	}
 }
 .exit_block {
-	background-color: #e9e8f0 !important;
+	background-color: #fff !important;
 	padding: 0 !important;
 }
 .background_wrapper {

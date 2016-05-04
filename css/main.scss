@@ -17,10 +17,14 @@ $font_l: 'HelveticaNeueCyr Light';
 * {
 	margin: 0;
 	padding: 0;
-	font-family: $font_ul;
+	font-family: $font_l;
 }
 body {
 	height: 100vh;
+}
+.wrapper {
+	min-height:100%;
+	position:relative;
 }
 /* ======== BEGIN LOGIN PAGE ======== */
 .wrapper-login-page {
@@ -250,9 +254,9 @@ table {
 		height: auto;
 	}
 }
-.background_for_footer {
-	height: 11.4vh;
-}
+// .background_for_footer {
+// 	height: 11.4vh;
+// }
 .page-footer {
 	height: 11vh;
 	background-color: #424242 !important;
@@ -364,4 +368,28 @@ h4 {
 			border: 2px solid #40C4FF !important;			
 		}
 	}
+}
+.title_oblik {
+	line-height: 65px;
+}
+input[type="search"] {
+	margin-top: 0 !important;
+}
+.collection-item {
+
+	a {
+		i {
+			margin-left: 5px;
+		}
+	}
+}
+a[href="#modal_new_spec"] {
+	float:right;
+	margin-top: 0;
+}
+a[href="#modal_new_group"] {
+	margin-top: 5px !important;
+}
+.logo_text {
+	font-family: $font_ul;
 }

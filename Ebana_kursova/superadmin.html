@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Watcher</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<!-- Для завантаження JS в ранніх версіях IE -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+	<div class="row">
+		<div class="col m10" style="padding-right: 0; padding-left: 0;">
+			<table class="bordered">
+				<thead>
+					<tr>
+						<th style="width: 5%;" class="center-align">#</th>
+						<th>Фото</th>
+						<th style="width: 15%;">ПІБ</th>
+						<th>Група</th>
+						<th>Курс</th>
+						<th># з. книжки</th>
+						<th>Форма навчання</th>
+						<th>Вид навчання</th>
+						<th class="center-align">ДН</th>
+						<th>Стать</th>
+						<th>Куратор</th>
+						<th style="width: 5%;"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="center-align">1</th>
+						<th><img src="img/photo.jpg" alt="" class="circle responsive-img profile-img center-align"></th>
+						<th>Гоголь Микола</th>
+						<th>ПІ 12-02</th>
+						<th class="center-align">IV</th>
+						<th class="center-align">12389</th>
+						<th class="center-align">Денна</th>
+						<th class="center-align">Державна</th>
+						<th>18.12.97</th>
+						<th class="center-align">Ч</th>
+						<th>Ходан О.І.</th>
+						<th class="edit_th">
+							<div class="col m12">
+							<a href="#"><i class="fa fa-pencil edit_icon fa-2x" aria-hidden="true"></i></a>
+							</div>
+							<div class="col m12">
+							<a href="#" class="delete_icon"><i class="fa fa-times fa-2x" aria-hidden="true"></i></a>
+							</div>
+						</th>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row">
+				<div class="col m2 offset-m10">
+					 <a class="waves-effect waves-light btn btn_add modal-trigger" href="#modal_new_student">+ студент</a>
+				</div>
+			</div>
+		</div>
+		<div class="col m2 sidebar">
+			<div class="row">
+				<div class="col m12">
+					<p class="center-align title_list">Список предметів</p>
+				</div>
+				<div class="col m12">
+					<ul>
+						<li><a href="#modal_marks" class="modal-trigger">Java</a></li>
+						<li><a href="#modal_marks" class="modal-trigger">OOP</a></li>
+						<li><a href="#modal_marks" class="modal-trigger">Соціологія</a></li>
+					</ul>
+				</div>
+				<div class="col m12" style="padding: 0;">
+					<a class="waves-effect waves-light btn btn_add_predmet modal-trigger" href="#modal_new_predmet" style="height: auto;">+ предмет</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- MODAL WINDOWS BEGIN -->
+	<!-- Modal MARKS_INFO BEGIN -->
+  	<div id="modal_marks" class="modal">
+	    <div class="modal-content" style="padding-bottom: 0 !important;">
+	    <h4>Предмет Java</h4>
+	    	<div class="row">
+		    	<div class="col m12">
+					<table>
+						<thead>
+							<tr>
+								<th>Студент</th>
+								<th>Дата</th>
+								<th>Бал</th>
+								<th>Вид заняття</th>
+								<th>Перездача</th>
+								<th style="width: 10%;"></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Гоголь Микола</th>
+								<th>05.04.16</th>
+								<th>8</th>
+								<th>Лабораторна</th>
+								<th></th>
+								<th class="modal_edit_th">
+									<a href="#"><i class="fa fa-pencil edit_icon fa-lg" aria-hidden="true"></i></a>
+									<a href="#" class="delete_icon"><i class="fa fa-times fa-lg" aria-hidden="true"></i></a>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+	    </div>
+	    <div class="modal-footer">
+	    	<a href="#modal_new_mark" class="modal-action waves-effect waves-green btn-flat btn_confirm modal-trigger">Добавити</a>
+	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_close">Відміна</a>
+	    </div>
+	</div>
+	<!-- Modal MARKS_INFO END -->
+
+	<!-- Modal NEW_MARK BEGIN -->
+  	<div id="modal_new_mark" class="modal">
+	    <div class="modal-content">
+	 		<h4>Новий запис</h4>
+	 			<div class="input-field">
+  				<select class="browser-default">
+  					<option value="" disabled selected>Студент</option>
+  					<option value="1">Гоголь Микола</option>
+  					<option value="2">Вася Вася</option>
+  					<option value="3">Lorem ipsum dolor.</option>
+  				</select>
+  	          	</div>
+  	          	<div class="row">
+	  	          	<div class="input-field col m6">
+	  					<input id="date" type="text" class="validate">
+	  	          		<label for="date">Дата</label>		
+	  	        	</div>
+	  	          	<div class="input-field col m6">
+	  					<input id="mark" type="text" class="validate">
+	  	          		<label for="mark">Оцінка</label>		
+	  	        	</div>
+  	        	</div>
+	 			<div class="input-field">
+  				<select class="browser-default">
+  					<option value="" disabled selected>Вид заняття</option>
+  					<option value="1">Лекція</option>
+  					<option value="2">Лабораторна</option>
+  					<option value="3">Практична робота</option>
+  				</select>
+  	          	</div>
+ 	          	<div class="row">
+          	 		<div class="col m3" style="margin-top: 17px; font-size: 25px;">
+          				Перездача:
+          			</div>
+  	          		<div class="input-field col m7">
+					  <div class="switch">
+					    <label>
+					      Ні
+					      <input type="checkbox">
+					      <span class="lever"></span>
+					      Так
+					    </label>
+					  </div>
+				 	</div>
+  	          </div>
+	    </div>
+	    <div class="modal-footer">
+  	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_confirm">Підтвердити</a>
+	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_close">Відміна</a>
+	    </div>
+	</div>
+	<!-- Modal NEW_MARK END -->
+	
+	<!-- Modal NEW_PREDMET BEGIN -->
+	<div id="modal_new_predmet" class="modal" style="width: 30%;">
+	    <div class="modal-content">
+	 		<h4>Новий предмет</h4>
+  	          	<div class="input-field col m6">
+  					<input id="predmet_name" type="text" class="validate">
+  	          		<label for="predmet_name">Назва предмету</label>		
+  	        	</div>
+	    </div>
+	    <div class="modal-footer">
+  	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_confirm">Підтвердити</a>
+	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_close">Відміна</a>
+	    </div>
+	</div>
+	<!-- Modal NEW_PREDMET END -->
+
+	<!-- Modal NEW_STUDENT BEGIN -->
+	<div id="modal_new_student" class="modal modal-fixed-footer" style="width: 60%;">
+	    <div class="modal-content">
+	 		<h4>Новий студент</h4>
+	 		<div class="row">
+  	          	<div class="input-field col m6">
+  					<input id="student_name" type="text" class="validate">
+  	          		<label for="student_name">Прізвище, ім'я, по-батькові</label>		
+  	        	</div>
+				<div class="col m6">
+			  <form action="#">
+			    <div class="file-field input-field">
+			      <div class="btn" style="background-color: #FBC02D;">
+			        <span>Фото</span>
+			        <input type="file">
+			      </div>
+			      <div class="file-path-wrapper">
+			        <input class="file-path validate" type="text">
+			      </div>
+			    </div>
+			  </form>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col m6">
+  					<input id="group_name" type="text" class="validate">
+  	          		<label for="group_name">Група</label>	
+			  </div>
+			  <div class="input-field col m6">
+  				<select class="browser-default">
+  					<option value="" disabled selected>Курс</option>
+  					<option value="1">I</option>
+  					<option value="2">II</option>
+  					<option value="3">III</option>
+  					<option value="4">IV</option>
+  				</select>
+  	          </div>
+  	        </div>
+  	        <div class="row">
+  	        	<div class="input-field col m4">
+  					<input id="zalik_num" type="text" class="validate">
+  	          		<label for="zalik_num"># залікової книжки</label>	
+  	        	</div>
+  	        	<div class="input-field col m4">
+  				<select class="browser-default">
+  					<option value="" disabled selected>Форма навчання</option>
+  					<option value="1">Денна</option>
+  					<option value="2">Заочна</option>
+  				</select>
+  	        	</div>
+  	        	<div class="col m4 input-field">
+  				<select class="browser-default">
+  					<option value="" disabled selected>Вид навчання</option>
+  					<option value="1">Державне</option>
+  					<option value="2">Платне</option>
+  				</select>
+  	        	</div>
+  	        </div>
+  	        <div class="row">
+  	        	<div class="input-field col m6">
+  					<input id="dn" type="text" class="validate">
+  	          		<label for="dn">День народження</label>	
+  	        	</div>
+  	        	<div class="col m6" style="margin-top: 40px;">
+				  <form action="#">
+				    <p style="display: inline-block;">
+				      <input name="boy" type="radio" id="test1" />
+				      <label for="boy">Чоловік</label>
+				    </p>
+				    <p style="display: inline-block;">
+				      <input name="girl" type="radio" id="test2" />
+				      <label for="girl">Жінка</label>
+				    </p>
+				  </form>
+				 </div>
+  	        </div>
+          	<div class="input-field col m12">
+				<input id="student_name" type="text" class="validate">
+          		<label for="student_name">Куратор</label>		
+        	</div>
+	    </div>
+	    <div class="modal-footer">
+  	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_confirm">Підтвердити</a>
+	    	<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat btn_close">Відміна</a>
+	    </div>
+	</div>
+	<!-- Modal NEW_STUDENT END -->
+	<!-- MODAL WINDOWS END -->
+
+	<!-- PRELOADER BEGIN -->
+	<div class="preloader-truly-wrapper">
+	<div class="row">
+		<div class="col m12 logo_block">
+			<p>Student Marks Online</p>
+			<img src="img/logo.png" alt="logo">
+
+		</div>
+	</div>
+		<div class="preloader-wrapper big active" id="preloader">
+			<div class="spinner-layer spinner-yellow-only">
+				<div class="circle-clipper left">
+					<div class="circle"></div>
+				</div>
+				<div class="gap-patch">
+					<div class="circle"></div>
+				</div>
+				<div class="circle-clipper right">
+					<div class="circle"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PRELOADER END -->
+
+	<footer class="page-footer">
+		<p class="center-align">© 2016 Student Marks Online</p>
+	</footer>
+	<!-- SCRIPTS -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+	  $('.datepicker').pickadate({
+	    selectMonths: true, // Creates a dropdown to control month
+	    selectYears: 15 // Creates a dropdown of 15 years to control year
+	  });
+	$(document).ready(function(){
+	    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	    $('.modal-trigger').leanModal();
+	});
+
+	$(document).ready(function($) {
+	  $(window).load(function() {
+	    setTimeout(function() {
+	      $('.preloader-truly-wrapper').fadeOut('slow', function() {});
+	    }, 100);
+	  });
+	});
+
+	</script>
+	</body>
+</html>

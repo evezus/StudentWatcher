@@ -182,12 +182,51 @@
 	<!-- Modal NEW_MARK END -->
 	
 	<!-- Modal NEW_PREDMET BEGIN -->
-	<div id="modal_new_predmet" class="modal" style="width: 30%;">
+	<div id="modal_new_predmet" class="modal modal-fixed-footer" style="width: 30%;">
 	    <div class="modal-content">
 	 		<h4>Новий предмет</h4>
-  	          	<div class="input-field col m6">
+  	          	<div class="input-field col m12">
   					<input id="predmet_name" type="text" class="validate">
   	          		<label for="predmet_name">Назва предмету</label>		
+  	        	</div>
+  	          	<div class="input-field col m12">
+  					<input id="ects" type="text" class="validate">
+  	          		<label for="ects">Кількість кредитів ECTS</label>		
+  	        	</div>
+  	        	<div class="row">
+  	          	<div class="input-field col m6">
+  					<input id="all_hours" type="text" class="validate">
+  	          		<label for="all_hours">Кількість годин</label>		
+  	        	</div>
+  	          	<div class="input-field col m6">
+  					<input id="lec_hours" type="text" class="validate">
+  	          		<label for="lec_hours">Лек. занять</label>		
+  	        	</div>
+  	        	<div class="row">
+	  	          	<div class="input-field col m6">
+	  					<input id="pr_hours" type="text" class="validate">
+	  	          		<label for="pr_hours">Практ. робіт</label>		
+	  	        	</div>
+
+	  	          	<div class="input-field col m6">
+	  					<input id="lab_hours" type="text" class="validate">
+	  	          		<label for="lab_hours">Лаб. робіт</label>		
+	  	        	</div>
+  	        	</div>
+  	        	<div class="row">
+  	        		<div class="col m6 input-field">
+	  					<input id="cons_num" type="text" class="validate">
+	  	          		<label for="cons_num">Консультацій</label>			
+  	        		</div>
+  	        		<div class="col m6 input-field">
+		  				<select class="browser-default">
+		  					<option value="" disabled selected>Форма контролю</option>
+		  					<option value="1">Екзамен</option>
+		  					<option value="2">Залік</option>
+		  					<option value="3">Диф. залік</option>
+		  				</select>
+  	        		</div>
+  	        	</div>
   	        	</div>
 	    </div>
 	    <div class="modal-footer">
@@ -332,7 +371,7 @@
 	  $(window).load(function() {
 	    setTimeout(function() {
 	      $('.preloader-truly-wrapper').fadeOut('slow', function() {});
-	    }, 100);
+	    }, 2000);
 	  });
 	});
 

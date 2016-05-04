@@ -20,7 +20,11 @@ $font_l: 'HelveticaNeueCyr Light';
 	font-family: $font_l;
 }
 body {
-	height: 100vh;
+	// height: 100vh;
+	position: relative;
+	padding-bottom: 14.4rem;
+	// padding-bottom: 6rem;
+	min-height: 100%;
 }
 .wrapper {
 	min-height:100%;
@@ -254,16 +258,17 @@ table {
 		height: auto;
 	}
 }
-// .background_for_footer {
-// 	height: 11.4vh;
-// }
+.background_for_footer {
+	height: 11.4vh;
+}
 .page-footer {
-	height: 11vh;
 	background-color: #424242 !important;
+	width: 100%;
 	position: absolute;
-	left: 0;
+	right: 0;
 	bottom: 0;
-	width: 100%; 
+	left: 0;
+	padding: 1rem;
 	p {
 		font-family: $font_ul;
 		letter-spacing: 1px;
